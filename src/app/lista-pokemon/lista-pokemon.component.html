@@ -1,0 +1,6 @@
+<h3>Lista de los {{ pokemonList.length }} primeros</h3>
+
+<div *ngFor="let pokemon of pokemonList" class="pokemonContainer">
+  <img [src]="pokemon.sprites.front_default" />
+  <span>{{ pokemon.name | uppercase }}</span>
+</div>
