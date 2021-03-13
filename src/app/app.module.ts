@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppComponent } from './app.component';
 import { ListaPokemonComponent } from './lista-pokemon/lista-pokemon.component';
@@ -17,7 +18,8 @@ import { FavoritosPokemonComponent } from './favoritos-pokemon/favoritos-pokemon
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

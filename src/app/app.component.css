@@ -1,0 +1,31 @@
+
+header{
+    min-height: 5px;
+    padding: 1px;
+    background-color: rgb(153, 153, 153);
+    text-align: center;
+    background-color: #405a77;
+    color: white;
+    box-shadow: 5px 0px 5px black;
+    margin-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav>a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    padding: 5px;
+    background-color: #507196;
+    font-weight: bold;
+    border-radius: 2px;
+    color: white;
+    transition: all 0.4s linear;
+}
+nav>a:hover{
+    border: 1px solid grey;
+    box-shadow: 0 0 8px rgb(87, 87, 87);
+}
