@@ -1,4 +1,3 @@
-
 header{
     min-height: 5px;
     padding: 1px;
@@ -7,13 +6,14 @@ header{
     background-color: #405a77;
     color: white;
     box-shadow: 5px 0px 5px black;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
 }
+
 nav>a{
     text-decoration: none;
     color: black;
@@ -23,9 +23,10 @@ nav>a{
     font-weight: bold;
     border-radius: 2px;
     color: white;
-    transition: all 0.4s linear;
+    transition: all 0.2s linear;
 }
 nav>a:hover{
+    background-color: #3e5672;
     border: 1px solid grey;
-    box-shadow: 0 0 8px rgb(87, 87, 87);
+    box-shadow: 0 0 3px rgb(87, 87, 87);
 }

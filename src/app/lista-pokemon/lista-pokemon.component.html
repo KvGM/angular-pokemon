@@ -1,4 +1,4 @@
-<h3 *ngIf="pokemonList.length===pokeMax">Lista del {{pokemonList[0].order}} al {{pokemonList.length-1}}</h3>
+<h3 *ngIf="pokemonList.length>=2">Lista del {{pokemonList[0].id}} al {{pokemonList[pokemonList.length-1].id}}</h3>
 
 <div class="pokeList">
   <div *ngFor="let pokemon of pokemonList" class="pokemonContainer">
@@ -6,3 +6,10 @@
     <span>{{ pokemon.name | uppercase }}</span>
   </div>
 </div>
+<nav aria-label="pagination">
+  <ul *ngIf="pages">
+      <li *ngFor="let p of pages">
+          <button (click)="getList(p)">{{p}}</button>
+      </li>
+  </ul>
+</nav>
