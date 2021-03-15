@@ -1,15 +1,22 @@
-<h3 *ngIf="pokemonList.length>=2">Lista del {{pokemonList[0].id}} al {{pokemonList[pokemonList.length-1].id}}</h3>
+<h3 *ngIf="pokemonList.length >= 2">
+  Lista del {{ pokemonList[0].id }} al
+  {{ pokemonList[pokemonList.length - 1].id }}
+</h3>
 
 <div class="pokeList">
-  <div *ngFor="let pokemon of pokemonList" class="pokemonContainer">
+  <div
+    *ngFor="let pokemon of pokemonList"
+    class="pokemonContainer"
+    [routerLink]="['/detalles/' + pokemon.id]"
+  >
     <img [src]="pokemon.sprites.front_default" />
     <span>{{ pokemon.name | uppercase }}</span>
   </div>
 </div>
 <nav aria-label="pagination">
   <ul *ngIf="pages">
-      <li *ngFor="let p of pages">
-          <button (click)="getList(p)">{{p}}</button>
-      </li>
+    <li *ngFor="let p of pages">
+      <button (click)="getList(p)">{{ p }}</button>
+    </li>
   </ul>
 </nav>

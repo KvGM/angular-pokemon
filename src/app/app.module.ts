@@ -7,12 +7,14 @@ import { ListaPokemonComponent } from './lista-pokemon/lista-pokemon.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FavoritosPokemonComponent } from './favoritos-pokemon/favoritos-pokemon.component';
+import { DetallesPokemonComponent } from './detalles-pokemon/detalles-pokemon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaPokemonComponent,
-    FavoritosPokemonComponent
+    FavoritosPokemonComponent,
+    DetallesPokemonComponent
   ],
   imports: [
     BrowserModule,

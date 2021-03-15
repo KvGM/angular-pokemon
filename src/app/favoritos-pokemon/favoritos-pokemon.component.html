@@ -1,1 +1,17 @@
-<p>favoritos-pokemon works!</p>
+<h3>Mis favoritos</h3>
+
+<div class="favGroup">
+  <div
+    *ngFor="let pokemon of pokeFavoritos"
+    class="favorito"
+    [routerLink]="['/detalles/' + pokemon.id]"
+  >
+    <div class="pokeball">
+      <img [src]="pokemon.sprites.front_default" />
+    </div>
+    <p class="pokeNombre">{{ pokemon.name | uppercase }}</p>
+    <div *ngFor="let type of pokemon.types" class="tipos">
+      <span class="tipo">{{ type.type.name | uppercase }}</span>
+    </div>
+  </div>
+</div>

@@ -1,17 +1,18 @@
 h3{
     margin-left: 10px;
+    font-size: 1.5em;
     text-align: center;
 }
 div> img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  background-image: linear-gradient(rgba(125, 24, 39, 0.75) 5%, rgba(255, 0, 0, 0.75) 49%, rgba(0, 0, 0, 0.75) 5%, rgba(255, 255, 255, 0.75) 49%, #CADBD1);
+  background-image: linear-gradient(rgba(125, 24, 39, 0.60) 0%, rgba(255, 0, 0, 0.60) 49%, rgba(0, 0, 0, 0.60) 5%, rgba(255, 255, 255, 0.60) 0%);
 }
 .pokemonContainer{
     border: 1px solid rgb(97, 97, 97);
     font-weight: bold;
-    width: 250px;
+    width: 350px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -21,7 +22,8 @@ div> img {
     padding-left: 35px;
     background-color: #cadbd1e3;
     cursor: pointer;
-    transition: 0.2s all linear;
+    transition: 0.15s all linear;
+    outline: none;
 }
 .pokemonContainer:hover{
     transform: scale(1.05);
