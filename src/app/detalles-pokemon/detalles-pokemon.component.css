@@ -1,16 +1,71 @@
-h3{
-    text-align: center;
-    font-size: 1.5em;
+h3 {
+  text-align: center;
+  font-size: 1.5em;
 }
 
-.detallesPoke{
-    width: 80%;
-    height: 600px;
-    background-color: #6488b1;
-    border-radius: 25px;
+.detallesPoke {
+  width: 80%;
+  height: 600px;
+  background-color: #6488b1;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.detallesPag{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+.detallesPag {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenesPoke {
+  width: 25%;
+  height: 450px;
+  background-color: bisque;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imagenesPoke > img {
+  height: 30%;
+}
+
+.datosPoke {
+  width: 60%;
+  height: 450px;
+  background-color: bisque;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  font-size: 1vw;
+}
+
+ul {
+  list-style: none;
+}
+
+.datosPokeAdicionales {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .datosPoke {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 601px) {
+  .datosPoke {
+    font-size: 1.5em;
+  }
 }

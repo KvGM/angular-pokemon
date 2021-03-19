@@ -1,4 +1,26 @@
 <h3 *ngIf="pokemon">Detalles de {{ pokemon.name | uppercase }}</h3>
-<div class="detallesPag">
-  <div class="detallesPoke"></div>
+<div *ngIf="pokemon" class="detallesPag">
+  <div class="detallesPoke">
+    <div class="imagenesPoke">
+      <img [src]="pokemon.sprites.front_default" />
+      <img [src]="pokemon.sprites.back_default" />
+    </div>
+    <div class="datosPoke">
+      <ul>
+        <li>Vida: {{ pokemon.stats[0].base_stat }}</li>
+        <li>Ataque: {{ pokemon.stats[1].base_stat }}</li>
+        <li>Defensa: {{ pokemon.stats[2].base_stat }}</li>
+        <li>Ataque Esp: {{ pokemon.stats[3].base_stat }}</li>
+        <li>Defensa Esp: {{ pokemon.stats[4].base_stat }}</li>
+      </ul>
+      <div class="datosPokeAdicionales">
+        <ul>
+          <li *ngFor="let type of pokemon.types">
+            {{ type.type.name | uppercase }}
+          </li>
+        </ul>
+        <p>Altura: {{ pokemon.height / 10 }} metros</p>
+      </div>
+    </div>
+  </div>
 </div>
